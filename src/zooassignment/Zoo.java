@@ -31,10 +31,11 @@ public class Zoo {
 		zooAnimals.add(new Piranha("Peppy", true, true, true, "Grey", "Piranha"));
 		zooAnimals.add(new Eel("Evan", true, true, true, "Green", "American Eel"));
 		zooAnimals.add(new Tuna("Tommy", true, true, true, "Blue", "Bluefin Tuna"));
-		
+
 		System.out.println("Today at the zoo I saw:");
-		for (int i=0; i<zooAnimals.size(); i++){
+		for (int i = 0; i < zooAnimals.size(); i++) {
 			System.out.println("-" + zooAnimals.get(i).toString());
+			zooAnimals.get(i).eat();
 		}
 
 	}

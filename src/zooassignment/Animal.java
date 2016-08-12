@@ -3,7 +3,7 @@ package zooassignment;
 public abstract class Animal {
 	private String name = null;
 	private boolean isAlive = false;
-	
+
 	public Animal(String name, boolean isAlive) {
 		this.name = name;
 		this.isAlive = isAlive;
@@ -24,7 +24,7 @@ public abstract class Animal {
 	public void setAlive(boolean isAlive) {
 		this.isAlive = isAlive;
 	}
-	
-	
-	
+
+	public abstract void eat();
+
 }

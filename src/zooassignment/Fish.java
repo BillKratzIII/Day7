@@ -1,9 +1,9 @@
 package zooassignment;
 
-public abstract class Fish extends Animal{
+public abstract class Fish extends Animal {
 	private boolean hasTeeth = false;
 	private boolean isColdBlooded = false;
-	
+
 	public Fish(String name, boolean isAlive, boolean hasTeeth, boolean isColdBlooded) {
 		super(name, isAlive);
 		this.hasTeeth = hasTeeth;
@@ -11,9 +11,9 @@ public abstract class Fish extends Animal{
 	}
 
 	public String getHasTeeth() {
-		if(hasTeeth){
+		if (hasTeeth) {
 			return "does";
-		}else{
+		} else {
 			return "does not";
 		}
 	}
@@ -23,18 +23,16 @@ public abstract class Fish extends Animal{
 	}
 
 	public String getIsColdBlooded() {
-		if (isColdBlooded){
+		if (isColdBlooded) {
 			return "is";
-		}else{
+		} else {
 			return "is not";
 		}
-			
+
 	}
 
 	public void setColdBlooded(boolean isColdBlooded) {
 		this.isColdBlooded = isColdBlooded;
 	}
-	
-	
-	
+
 }

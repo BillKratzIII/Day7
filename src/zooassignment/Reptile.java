@@ -3,7 +3,7 @@ package zooassignment;
 public abstract class Reptile extends Animal {
 	private int numLegs = 0;
 	private boolean canSwim = false;
-	
+
 	public Reptile(String name, boolean isAlive, int numLegs, boolean canSwim) {
 		super(name, isAlive);
 		this.numLegs = numLegs;
@@ -18,15 +18,12 @@ public abstract class Reptile extends Animal {
 		this.numLegs = numLegs;
 	}
 
-
 	public String getCanSwim() {
-		if(canSwim){
+		if (canSwim) {
 			return "can";
-		}else{
+		} else {
 			return "can't";
 		}
 	}
-	
-	
 
 }

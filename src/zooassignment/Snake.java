@@ -1,9 +1,9 @@
 package zooassignment;
 
-public class Snake extends Reptile{
+public class Snake extends Reptile {
 	private String color = null;
 	private String type = null;
-	
+
 	public Snake(String name, boolean isAlive, int numLegs, boolean canSwim, String color, String type) {
 		super(name, isAlive, numLegs, canSwim);
 		this.color = color;
@@ -25,8 +25,15 @@ public class Snake extends Reptile{
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
 	public String toString() {
-		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " with " + this.getNumLegs() + " legs that " + this.getCanSwim() + " swim.";
+		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " with " + this.getNumLegs()
+				+ " legs that " + this.getCanSwim() + " swim.";
+	}
+
+	@Override
+	public void eat() {
+		System.out.println(this.getName() + " eats mice.");
+
 	}
 }

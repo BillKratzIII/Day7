@@ -1,13 +1,9 @@
 package zooassignment;
 
-/**
- * @author admin
- *
- */
-public class Elephant extends Mammal{
+public class Elephant extends Mammal {
 	private String color = null;
 	private String type = null;
-	
+
 	public Elephant(String name, boolean isAlive, String sex, int numLegs, String color, String type) {
 		super(name, isAlive, sex, numLegs);
 		this.color = color;
@@ -32,8 +28,14 @@ public class Elephant extends Mammal{
 
 	@Override
 	public String toString() {
-		return this.getName() + ", a " + this.getSex()+ " " + this.getColor() + " " + this.getType() + " with " + this.getNumLegs() + " legs.";
+		return this.getName() + ", a " + this.getSex() + " " + this.getColor() + " " + this.getType() + " with "
+				+ this.getNumLegs() + " legs.";
 	}
-	
-	
+
+	@Override
+	public void eat() {
+		System.out.println(this.getName() + " eats grass.");
+
+	}
+
 }

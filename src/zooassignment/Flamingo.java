@@ -1,6 +1,6 @@
 package zooassignment;
 
-public class Flamingo extends Bird{
+public class Flamingo extends Bird {
 	private String color = null;
 	private String type = null;
 
@@ -28,7 +28,14 @@ public class Flamingo extends Bird{
 
 	@Override
 	public String toString() {
-		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " that " + this.getCanFly() + " fly & " + this.getCanSwim() + " swim.";
+		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " that " + this.getCanFly()
+				+ " fly & " + this.getCanSwim() + " swim.";
+	}
+
+	@Override
+	public void eat() {
+		System.out.println(this.getName() + " eats grass.");
+
 	}
 
 }

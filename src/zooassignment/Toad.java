@@ -1,9 +1,9 @@
 package zooassignment;
 
-public class Toad extends Anphibian{
+public class Toad extends Anphibian {
 	private String color = null;
 	private String type = null;
-	
+
 	public Toad(String name, boolean isAlive, boolean hasMetamorphisized, int numLegs, String color, String type) {
 		super(name, isAlive, hasMetamorphisized, numLegs);
 		this.color = color;
@@ -25,9 +25,16 @@ public class Toad extends Anphibian{
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
 	public String toString() {
-		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " with " + this.getNumLegs() + " legs that " + this.getHasMetamorphisized() + " metamorphasized.";
+		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " with " + this.getNumLegs()
+				+ " legs that " + this.getHasMetamorphisized() + " metamorphasized.";
+	}
+
+	@Override
+	public void eat() {
+		System.out.println(this.getName() + " eats insects.");
+
 	}
 
 }

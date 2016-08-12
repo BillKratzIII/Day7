@@ -1,6 +1,6 @@
 package zooassignment;
 
-public class Shark extends Fish{
+public class Shark extends Fish {
 	private String color = null;
 	private String type = null;
 
@@ -25,9 +25,16 @@ public class Shark extends Fish{
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
 	public String toString() {
-		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " that " + this.getHasTeeth() + " have teeth & " + this.getIsColdBlooded() + " cold blooded.";
+		return this.getName() + ", a " + this.getColor() + " " + this.getType() + " that " + this.getHasTeeth()
+				+ " have teeth & " + this.getIsColdBlooded() + " cold blooded.";
+	}
+
+	@Override
+	public void eat() {
+		System.out.println(this.getName() + " eats fish.");
+
 	}
 
 }

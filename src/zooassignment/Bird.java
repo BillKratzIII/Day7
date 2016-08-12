@@ -1,9 +1,9 @@
 package zooassignment;
 
-public abstract class Bird extends Animal{
+public abstract class Bird extends Animal {
 	private boolean canFly = false;
 	private boolean canSwim = false;
-	
+
 	public Bird(String name, boolean isAlive, boolean canFly, boolean canSwim) {
 		super(name, isAlive);
 		this.canFly = canFly;
@@ -11,25 +11,21 @@ public abstract class Bird extends Animal{
 	}
 
 	public String getCanFly() {
-		if(canFly){
+		if (canFly) {
 			return "can";
-		}else{
+		} else {
 			return "can't";
 		}
 	}
-
-
 
 	public boolean isCanSwim() {
 		return canSwim;
 	}
 
-
-
 	public String getCanSwim() {
-		if(canSwim){
+		if (canSwim) {
 			return "can";
-		}else{
+		} else {
 			return "can't";
 		}
 	}

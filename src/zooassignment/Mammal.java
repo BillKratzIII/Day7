@@ -3,7 +3,7 @@ package zooassignment;
 public abstract class Mammal extends Animal {
 	private String sex = null;
 	private int numLegs = 0;
-	
+
 	public Mammal(String name, boolean isAlive, String sex, int numLegs) {
 		super(name, isAlive);
 		this.sex = sex;
@@ -25,7 +25,5 @@ public abstract class Mammal extends Animal {
 	public void setNumLegs(int numLegs) {
 		this.numLegs = numLegs;
 	}
-	
-	
-	
+
 }

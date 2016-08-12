@@ -1,9 +1,9 @@
 package zooassignment;
 
-public abstract class Anphibian extends Animal{
+public abstract class Anphibian extends Animal {
 	private boolean hasMetamorphisized = false;
 	private int numLegs;
-	
+
 	public Anphibian(String name, boolean isAlive, boolean hasMetamorphisized, int numLegs) {
 		super(name, isAlive);
 		this.hasMetamorphisized = hasMetamorphisized;
@@ -11,9 +11,9 @@ public abstract class Anphibian extends Animal{
 	}
 
 	public String getHasMetamorphisized() {
-		if (hasMetamorphisized){
+		if (hasMetamorphisized) {
 			return "has";
-		}else{
+		} else {
 			return "has not";
 		}
 	}
@@ -29,7 +29,5 @@ public abstract class Anphibian extends Animal{
 	public void setNumLegs(int numLegs) {
 		this.numLegs = numLegs;
 	}
-	
-	
 
 }
